@@ -24,15 +24,33 @@ export function Product(): JSX.Element {
   }
 
   return (
-    <ScrollView style={styles.container} bounces={false} showsVerticalScrollIndicator={false}>
+    <ScrollView 
+      style={styles.container} 
+      bounces={false} 
+      showsVerticalScrollIndicator={false}
+    >
       <View style={styles.horizontal}>
-        <TouchableOpacity style={styles.button} activeOpacity={0.7}>
-          <Feather name='chevron-left' color="#CFCFCF" size={24} />
+        <TouchableOpacity 
+          style={styles.button} 
+          activeOpacity={0.7}
+        >
+          <Feather 
+            name='chevron-left' 
+            color="#CFCFCF" 
+            size={24} 
+          />
         </TouchableOpacity>
 
         <View style={styles.headerRight}>
-          <TouchableOpacity style={styles.button} activeOpacity={0.7}>
-            <Feather name='heart' color="#CFCFCF" size={24} />
+          <TouchableOpacity 
+            style={styles.button} 
+            activeOpacity={0.7}
+          >
+            <Feather 
+              name='heart' 
+              color="#CFCFCF" 
+              size={24} 
+            />
           </TouchableOpacity>
 
           <TouchableOpacity style={[styles.button, { marginLeft: 10 }]} activeOpacity={0.7}>
