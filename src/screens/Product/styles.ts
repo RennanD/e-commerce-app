@@ -74,12 +74,16 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 50
   },
+  img: {
+    position: 'relative',
+  },
   infoContainer: {
     backgroundColor: '#fff',
     flex: 1,
     marginTop: 20,
     borderTopLeftRadius: 40,
-    borderTopRightRadius: 40
+    borderTopRightRadius: 40,
+    paddingBottom: 30
   },
   content: {
     paddingHorizontal: 20,

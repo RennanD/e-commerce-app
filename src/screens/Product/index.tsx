@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native';
 import { Feather, MaterialIcons } from '@expo/vector-icons'
 
 import styles from './styles';
@@ -24,7 +24,7 @@ export function Product(): JSX.Element {
   }
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container} bounces={false} showsVerticalScrollIndicator={false}>
       <View style={styles.horizontal}>
         <TouchableOpacity style={styles.button} activeOpacity={0.7}>
           <Feather name='chevron-left' color="#CFCFCF" size={24} />
@@ -42,7 +42,7 @@ export function Product(): JSX.Element {
       </View>
       
       <View style={styles.banner}>
-        <Image source={productImg} style={{ position: 'relative' }} />
+        <Image source={productImg} style={styles.img} resizeMode="contain" />
         <View style={styles.imageBanner} />
 
         <View style={styles.dots}>
@@ -115,6 +115,6 @@ export function Product(): JSX.Element {
           <Text style={styles.buyText}>Buy Now</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </ScrollView>
   )
 }
